@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     }
+    .header{
+     display: flex;
+     justify-content: space-around;
+     background-color: rgb(204, 197, 197);
+     height: 6vh;
+     }
+    .nav-bar h2{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: rgb(18, 109, 145);
+     }
+    .links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+     }
+    .links li a{
+     text-decoration: none;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: black;
+     font-size: large;
+     }
+     @media screen and (min-width:480px){
+        .nav-bar h2{
+        border: 2px solid black;
+        line-height: 42px;
+        }
+        .links{
+          border: 2px solid black;
+          width:62%;
+          display: flex;
+          justify-content: space-between;
+          line-height: 42px;
+          text-transform: uppercase;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          
+        }
+
+     }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+         <div class="header">
+         <nav class="nav-bar">
+           <h2>logo</h2>
+         </nav>
+          <ul class="links">
+             <li><a href="#">home</a></li>
+             <li><a href="#">about</a></li>
+             <li><a href="#">serives</a></li>
+             <li><a href="#">products</a></li>
+          </ul>
+         </div>
+    </div>
+</body>
+</html>

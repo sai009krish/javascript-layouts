@@ -1,0 +1,39 @@
+.about{
+ display: flex; 
+ justify-content: space-evenly;  
+}
+.left h2{
+ border-bottom: 4px solid blueviolet;
+ width: 120px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.left{
+    margin-top: 250px;
+}
+.left p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;  
+}
+.about .right img{
+  width: 40vw;  
+}
+.team{
+  display: flex;
+  justify-content: space-evenly;
+}
+.left-cont h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-bottom: 2px solid blueviolet;
+  font-size: 35px;
+}
+.left-cont p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.right-cont{
+  display: flex;
+}
+.right-cont> img{
+  width:15vw;
+  border-radius: 120px;
+  margin-left: 25px;
+}

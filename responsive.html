@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        html,body{
+            width: 100%;
+        }
+       .res{
+           height: 80px;
+           background-color: pink;
+           max-width: 700px;
+           
+       }
+    </style>
+</head>
+<body>
+    <div class="res"></div>
+
+
+
+
+    const addtodo = (event) => {
+        event.preventDefault();
+        setTodos([...todos,input]);  {/*todos.concat(input)*/}
+       }
+      return (
+        <div className="App">
+          <from>
+          <FormControl>
+           <InputLabel>Todo app</InputLabel>
+           <Input value={input} onChange={event => setinput(event.target.value)} />
+           </FormControl>
+            <Button type="submit" onClick={addtodo} variant="contained" colors="primary">Add Todo</Button>
+            </from> 
+            <ul>
+              {todos.map(todo =>(
+                <Todo text={todo}/>
+             // <li>{todo}</li>
+              ))}
+            </ul>
+
+
+            kittukrishna999
+            -6-5DQ_CYsD2JHq
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

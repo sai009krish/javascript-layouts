@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+           display: grid;
+           grid-template-columns:repeat(4, 3fr 1fr); 
+           grid-gap:1em;
+           grid-auto-rows: minmax(200px,auto);
+        }
+       .wrap>div{
+           background-color: grey;
+       }
+       .wrap>div:nth-child(odd){
+           background-color: wheat;
+       }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+
+         <div class="col1">
+         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>  
+         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>  
+         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>  
+         </div>
+
+         <div class="col2"> 
+         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>  
+             </div>
+
+             <div class="col3">
+                 <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>  
+                 </div>
+
+                 <div class="col4">
+                     <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>  
+                     </div>
+
+                     <div class="col5">
+                        <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>  
+                        </div>
+                       
+               
+    
+
+
+    </div>
+</body>
+</html>

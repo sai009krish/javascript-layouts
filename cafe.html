@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 3900px;
+        }
+
+        .header {
+            background-color: white;
+            height: 100px;
+            display: flex;
+        }
+
+        .left {
+            /* border: 1px solid black; */
+            flex: 2;
+        }
+
+        .left img {
+            padding: 20px 140px;
+        }
+
+        .right {
+            /* border: 1px solid black; */
+            flex: 2;
+        }
+
+        .right li {
+            font-family: sans-serif;
+            font-weight: bolder;
+            list-style: none;
+            margin-left: 12px;
+            font-size: 15px;
+            float: left;
+            padding: 37px 10px;
+        }
+
+        .section {
+            display: flex;
+        }
+
+        .left1 {
+            background-image: url(img/top-left-bg.jpg);
+            background-size: 450px 700px;
+            background-repeat: no-repeat;
+            height: 700px;
+            width: 450px;
+        }
+
+        .left1 h2 {
+            font-family: cursive;
+            font-style: oblique;
+            font-size: 45px;
+            color: white;
+            margin-left: 100px;
+            margin-top: 250px;
+        }
+
+        .left1 h3 {
+            font-family: sans-serif;
+            font-size: 25px;
+            color: white;
+            margin-left: 70px;
+        }
+
+        .left1 a {
+            text-decoration: none;
+            color: rgb(235, 71, 12);
+            background-color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+            margin-left: 105px;
+            padding: 10px 22px;
+        }
+
+        .right1 {
+            background-image: url(img/slide-03.jpg);
+            height: 700px;
+            width: 1000px;
+        }
+
+        .section1 {
+            display: flex;
+        }
+
+        .left2 {
+            /* border: 1px solid black; */
+            /* width: 550px; */
+            margin-top: 34px;
+            margin-left: 100px;
+
+        }
+
+        .right2 {
+            /* border: 1px solid black; */
+            margin-top: 30px;
+            margin-left: 90px;
+
+        }
+
+        .left2 h3 {
+            color: rgb(235, 71, 12);
+            font-family: monospace;
+            font-size: 23px;
+            margin-top: 20px;
+        }
+
+        .left2 img {
+            padding-top: 30px;
+        }
+
+        .left2 h2 {
+            font-family: sans-serif;
+            font-size: 24px;
+            padding-top: 19px;
+        }
+
+        .left2 p {
+            font-family: sans-serif;
+            font-size: 16px;
+            padding-top: 20px;
+        }
+
+        .head h3 {
+            margin-top: 10px;
+            margin-left: 50px;
+            color: tomato;
+            font-family: sans-serif;
+        }
+
+        .head h2 {
+            margin-top: 10px;
+            margin-left: 50px;
+            font-family: sans-serif;
+
+        }
+
+        .menu {
+            margin-top: 20px;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .menu>div {
+            height: 420px;
+            width: 255px;
+
+        }
+
+        .box1 {
+            background-image: url(img/menu-item-01.jpg);
+            background-size: 255px 420px;
+            background-repeat: no-repeat;
+
+        }
+
+        .menu div h2 {
+            color: white;
+            background-color: tomato;
+            display: inline-block;
+            padding: 15px 15px;
+        }
+
+        .box2 {
+            background-image: url(img/menu-item-02.jpg);
+            background-size: 255px 420px;
+            background-repeat: no-repeat;
+        }
+
+        .box3 {
+            background-image: url(img/menu-item-03.jpg);
+            background-size: 255px 420px;
+            background-repeat: no-repeat;
+        }
+
+        .box4 {
+            background-image: url(img/menu-item-04.jpg);
+            background-size: 255px 420px;
+            background-repeat: no-repeat;
+        }
+
+        .box5 {
+            background-image: url(img/menu-item-05.jpg);
+            background-size: 255px 420px;
+            background-repeat: no-repeat;
+        }
+
+        .chef h2 {
+            margin-top: 7%;
+            margin-left: 42%;
+            font-family: monospace;
+            color: tomato;
+        }
+
+        .chef h1 {
+            font-family: sans-serif;
+            font-size: 30px;
+            padding: 15px 0px;
+            margin-left: 37%;
+        }
+
+        .chefs {
+            /* background-color: greenyellow; */
+            /* height: 350px; */
+            display: flex;
+            justify-content: space-evenly;
+            width: 95%;
+            margin: auto;
+            /* align-items: center; */
+        }
+
+        .chefs>div {
+            height: 420px;
+            width: 330px;
+            border: 1px solid rgb(185, 178, 178);
+            box-shadow: 0px 0px 1px;
+
+        }
+
+        .chefs img {
+            margin-top: 7px;
+            margin-left: 5px;
+            width: 320px;
+            height: 350px;
+        }
+
+        .chefs h2 {
+            font-family: sans-serif;
+            padding: 0px 80px;
+        }
+
+        .chefs p {
+            font-family: sans-serif;
+            font-size: 16px;
+            padding: 3px 110px;
+        }
+
+        .inform {
+            background-image: url(img/reservation-bg.jpg);
+            height: 22%;
+            margin-top: 3%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .inleft {
+            color: white;
+        }
+
+        .inleft p {
+            padding: 9px 0px;
+        }
+
+        .phn {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .phn>div {
+            /* width: 10px; */
+            color: black;
+            padding: 30px 30px;
+            background-color: white;
+        }
+
+        .inform .inright {
+            width: 470px;
+            height: 550px;
+            background-color: white;
+        }
+
+        .inright h2 {
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 90px;
+            margin-top: 40px;
+            font-size: 30px;
+        }
+
+        .inright input {
+            padding: 11px 15px;
+            margin-top: 28px;
+            margin-left: 18px;
+            border: 1px solid rgb(230, 224, 224);
+            outline: none;
+        }
+
+        .inright span input {
+            width: 400px;
+            height: 110px;
+            outline: none;
+
+        }
+
+        .inright a {
+            text-decoration: none;
+            position: relative;
+            top: 50px;
+            left: 10px;
+            color: white;
+            padding: 12px 135px;
+            background-color: tomato;
+        }
+
+
+        .off h3 {
+            font-family: sans-serif;
+            color: tomato;
+            font-size: 15px;
+            padding: 12px 42%;
+        }
+
+        .off h2 {
+            font-size: 32px;
+            font-family: sans-serif;
+            padding-left: 40%;
+            padding-top: 9px;
+        }
+
+        .off img {
+            position: relative;
+            left: 38%;
+            top: 12px;
+        }
+
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 15px;
+
+        }
+
+        .items>div {
+            width: 500px;
+            flex-direction: row;
+            /* border: 1px solid black; */
+
+        }
+
+        .items h2 {
+            position: relative;
+            left: 21%;
+            top: -60%;
+            font-family: sans-serif;
+        }
+
+        .items p {
+            font-family: monospace;
+            font-size: 16px;
+            position: relative;
+            left: 21%;
+            top: -59%;
+            padding: 2px 0px;
+        }
+
+        .items .price {
+            position: relative;
+            left: 90%;
+            top: -85%;
+            background-color: tomato;
+            display: inline;
+            padding: 27px 19px;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 19px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <!-- header start -->
+        <div class="header">
+
+            <div class="left">
+                <img src="img/klassy-logo.png" alt="">
+
+            </div>
+            <div class="right">
+                <ol>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>MENU</li>
+                    <li>CHEFS</li>
+                    <li>FEATURES</li>
+                    <li>CONTACT US</li>
+
+                </ol>
+
+            </div>
+        </div>
+        <!-- header end -->
+
+        <!-- section start -->
+        <div class="section">
+            <div class="left1">
+                <h2>klassycafe</h2>
+                <h3>THE BEST EXPERIENCE</h3>
+                <br>
+                <a href="#">MAKE A Reservation</a>
+
+            </div>
+            <div class="right1">
+
+            </div>
+
+        </div>
+        <!-- section end -->
+
+        <!-- section 1 -->
+        <div class="section1">
+            <div class="left2">
+                <h3>ABOUT US</h3>
+                <h2>We Leave A Delicious<br> Memory For You</h2>
+                <p>Klassy Cafe is one of the best restaurant HTML templates with Bootstrap<br> v4.5.2 CSS framework. You
+                    can
+                    download and feel free to use this website<br> template layout for your restaurant business. You are
+                    allowed
+                    to use this<br> template for commercial purposes.
+                    <br> <br>
+                    You are NOT allowed to redistribute the template ZIP file on any template<br> donwnload website.
+                    Please
+                    contact us for more information.
+                </p>
+
+                <img src="img/about-thumb-01.jpg" alt="">
+                <img src="img/about-thumb-02.jpg" alt="">
+                <img src="img/about-thumb-03.jpg" alt="">
+
+            </div>
+
+            <div class="right2">
+                <img src="img/about-video-bg.jpg" alt="">
+
+            </div>
+
+        </div>
+        <!-- section 1 -->
+
+        <!-- menu starts -->
+
+        <div class="head">
+            <h3>OUR MENU</h3>
+            <h2>Our Selection Of Cakes <br> With quality taste</h2>
+
+        </div>
+
+        <div class="menu">
+
+            <div class="box1">
+                <h2>$21</h2>
+            </div>
+            <div class="box2">
+                <h2>$19</h2>
+            </div>
+            <div class="box3">
+                <h2>$23</h2>
+            </div>
+            <div class="box4">
+                <h2>$25</h2>
+            </div>
+            <div class="box5">
+                <h2>$22</h2>
+            </div>
+
+        </div>
+
+        <div class="chef">
+            <h2>OUR CHEFS</h2>
+            <h1>We offer the best<br> ingredients for you</h1>
+        </div>
+
+        <div class="chefs">
+            <div class="col1">
+                <img src="img/chefs-01.jpg" alt="">
+                <h2>Randy Walker</h2>
+                <p>Pastry Chef</p>
+            </div>
+
+            <div class="col2">
+                <img src="img/chefs-02.jpg" alt="">
+                <h2>David Martin</h2>
+                <p>Cookie Chef</p>
+            </div>
+
+            <div class="col3">
+                <img src="img/chefs-03.jpg" alt="">
+                <h2>Peter Perkson</h2>
+                <p>Pancake Chef</p>
+            </div>
+        </div>
+
+        <div class="inform">
+            <!-- left -->
+            <div class="inleft">
+
+                <h2>CONTACT US</h2>
+                <h1>Here You Can Make A Reservation <br> Or Just walkin to our cafe</h1>
+                <p>Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend <br> riqsie, namei
+                    sollicitudin urna diam, sed commodo purus porta ut.</p>
+                <!-- phn -->
+                <div class="phn">
+                    <div class="phn1">
+                        <h4>Phone Numbers</h4>
+                        <p>080-090-0990</p>
+                        <p>090-090-0880</p>
+                    </div>
+
+                    <div class="phn2">
+                        <h4>Emails</h4>
+                        <p>hello@company.com</p>
+                        <p>info@company.com</p>
+                    </div>
+                </div>
+                <!-- phn end -->
+            </div>
+            <!-- left end -->
+
+
+            <!-- right -->
+            <div class="inright">
+                <h2>TABLE RESERVATION</h2>
+                <input type="text" placeholder="YOUR NAME">
+                <input type="text" placeholder="YOUR Email Address">
+                <br>
+                <input type="text" placeholder="Phone Number">
+                <input type="text" placeholder="Number Of Guests">
+                <br>
+                <input type="text" placeholder="dd/mm/yyy">
+                <input type="text" placeholder="Time">
+                <br>
+                <span> <input type="text" placeholder="Message"> </span>
+                <br>
+                <a href="#">MAKE A RESERVATION</a>
+
+
+            </div>
+
+
+        </div>
+        <!-- right end -->
+
+        <!-- offers -->
+
+
+        <div class="off">
+            <h3>KLASSY WEEK</h3>
+            <h2>This Week’s Special <br> Meal Offers</h2>
+
+            <img src="img/tab-icon-01.png" alt="">
+
+            <img src="img/tab-icon-02.png" alt="">
+
+            <img src="img/tab-icon-03.png" alt="">
+
+
+        </div>
+
+        <!-- offer end -->
+
+
+
+
+        <!-- menu start -->
+
+        <div class="items">
+
+            <div class="item1">
+                <img src="img/tab-item-04.png" alt="">
+                
+                <h2>EGGS OMELETTE</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur<br> koit adipiscing elit, sed do.</P>
+                 <h3>$14</h3>
+                   </div>
+
+            <div class="item2">
+                <img src="img/tab-item-01.png" alt="">
+                <h2>Fresh Chicken Salad</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur<br> koit adipiscing elit, sed do.</P>
+                <div class="price">$18</div>
+            </div>
+
+            <div class="item3">
+                <img src="img/tab-item-05.png" alt="">
+                <h2>Fresh Dollma Pire</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur<br> koit adipiscing elit, sed do.</P>
+                <div class="price">$12</div>
+            </div>
+
+            <div class="item4">
+                <img src="img/tab-item-02.png" alt="">
+                <h2>Orange Juice</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur<br> koit adipiscing elit, sed do.</P>
+                <div class="price">$21</div>
+            </div>
+
+            <div class="item5">
+                <img src="img/tab-item-06.png" alt="">
+                <h2>Omelette & Cheese</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur<br> koit adipiscing elit, sed do.</P>
+                <div class="price">$15</div>
+            </div>
+
+            <div class="item6">
+                <img src="img/tab-item-03.png" alt="">
+                <h2>Fruit Salad</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur<br> koit adipiscing elit, sed do.</P>
+                <div class="price">$23</div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

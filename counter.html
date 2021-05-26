@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color:lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .counter{
+      width: 450px;
+      height: 250px;
+      border: 1px solid tomato;
+      border-radius: 20px;
+      box-shadow: 2px 4px 8px white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: lightgreen;
+      
+    }
+
+    .counter button{
+      padding:10px 25px;
+      font-size: 20px;
+      background-color: tomato;
+      border-radius: 8px;
+    }
+    #num{
+      border:3px solid tomato;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 50px;
+      box-shadow: 2px 4px 8px white;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="counter">
+    <div id="num">0</div>
+    <div class="btns">
+      <button id="reset" >C</button>
+      <button id="inc">+</button>
+      <button id="decr">-</button>
+    </div>
+   
+  </div>
+
+  <script>
+    var reset = document.getElementById("reset");
+    var increment = document.getElementById("inc");
+    var decrement = document.getElementById("decr");
+    var display = document.getElementById("num");
+    var int = 0;
+
+
+    increment.addEventListener("click", function () {
+      int++;
+      display.style.color="darkgreen";
+      display.innerHTML = int;
+    });
+
+    decrement.addEventListener("click", function () {
+        int--;
+        if (int < 0) {
+          display.style.color = "red";
+        }
+        display.innerHTML = int;
+      });
+
+    reset.addEventListener("click", function () {
+      int=0;
+     display.innerHTML = int;
+    });
+
+  </script>
+</body>
+
+</html>

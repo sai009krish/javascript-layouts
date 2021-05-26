@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      a{
+          text-decoration: none;
+          text-transform: uppercase;
+        
+      }
+      .nav-bar ul{
+        display: flex;
+        justify-content:space-around;
+        list-style: none;
+      }
+      .sub-link ul {
+          display: inline;
+          padding: 2px 2px;
+          display: none;
+          position: absolute;
+          
+      }
+      .sub-link1 ul {
+          display: none;
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+         <nav class="nav-bar">
+             <ul class="nav-links">
+                <li><a href="">home</a></li>
+                <li><a href="">products</a>
+                    <div class="sub-link">
+                        <ul>
+                            <li><a href="">grooming</a></li>
+                            <li><a href="">skincare</a></li>
+                            <li><a href="">groceries</a></li> 
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">sevices</a>
+                    <div class="sub-link1">
+                        <ul>
+                            <li><a href="">free delivery</a></li>
+                            <li><a href="">good packing</a></li>
+                            <li><a href="">cod</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="">contact</a></li>
+             </ul>
+         </nav>
+
+
+
+
+    </div>
+    
+
+    <script>
+
+    </script>
+</body>
+</html>

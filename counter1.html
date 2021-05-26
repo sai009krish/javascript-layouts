@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+          background-color: skyblue;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+         align-items: center;
+      }
+      .counter{
+          width: 600px;
+          height: 300px;
+          border: 1px solid black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          background-color: whitesmoke;
+          box-shadow: 2px 2px 3px 4px  rgb(85, 69, 69);
+          position: relative;
+      }
+      .counter button {
+          padding: 10px 15px;
+          font-size: 18px;
+          background-color: gainsboro;
+          margin-top: 2%;
+          border: 1px solid black;
+          border-radius:5px;
+          
+        }
+        #number {
+            width: 3vw;
+            text-align: center;
+        margin-bottom: 10%;
+        border: 2px solid wheat;
+        font-size: 45px;
+        position: absolute;
+        left: 280px;
+        top:20px;
+        transition: all .5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="counter">
+            <span id ="number">0</span>
+            <button id="incr">+</button>
+            <button id="decre">-</button>
+            <button id="reset">RESET</button>
+        </div>
+    
+    </div>
+
+
+    <script>
+        function test(){
+            return  Math.floor(Math.random()*250)
+        }
+       
+      document.body.style.backgroundColor=`rgb(${test()}, ${test()},${test()})`; 
+        
+       var number = document.getElementById("number");
+        var increment = document.getElementById("incr");
+        var decrement = document.getElementById("decre");
+        var reset = document.getElementById("reset");
+        var count = document.getElementsByClassName("counter");
+       
+        count[0].style.backgroundColor= "#"+Math.random().toString(16).slice(2,8);
+
+        var i = 0;
+             // incrmenet 
+          increment.addEventListener("click", function() {
+             
+                if (i > 0) {
+                 number.style.color = "green";
+                }
+                
+                var a= Math.floor( Math.random()*600  );  
+                var b= Math.floor(Math.random()*300);
+
+                number.style.left= a+"px"; 
+                number.style.top = b+"px";
+
+                number.innerHTML = i++;
+                count.style.color="blue";
+                 });
+
+
+            // decerment 
+           decrement.addEventListener("click", function() {
+                if (i < 0) {
+                 number.style.color = "red";
+                 var a= Math.floor( Math.random()*600  );  
+                var b= Math.floor(Math.random()*300);
+
+                number.style.left= a+"px"; 
+                number.style.top = b+"px";
+                }
+                number.innerHTML = i--;
+            });
+             
+            // reset
+        reset.addEventListener("click" , function () {
+                i = 0;
+                number.innerHTML = i;
+                number.style.left="280px";
+                number.style.top="10px";
+            });
+
+
+           
+        
+        
+
+
+
+    
+
+    </script>
+</body>
+</html>

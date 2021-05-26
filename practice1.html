@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       //In a web page, global variables belong to the window object.
+       //Variables created without a declaration keyword (var, let, or const) are always global, even if they are created inside a function.
+       // var let  cosnt
+          
+           //closure ---
+
+          //    The closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned.          
+           // data privacy    
+           //hoisting
+       //IIFE
+
+
+
+       // function declaration , function expression: whayti is the main difference between them (Hoisting)
+      /*
+         Inner functions scope area
+
+         1.its own variable 2.its parent's variable  3. global varibale 
+         1.its won prams 2.its parents's params
+
+      */
+       
+     // 
+
+
+
+
+
+         function test(){
+              localvar=10;
+         }
+        test()
+        alert(localvar)
+      
+    
+        function outer(s, d) {
+            var b = 10;
+            var r=5;
+            var q="helo";
+         function inner() {
+                var y = 20;
+                alert(b+s+d);
+            }
+
+            return inner;
+
+            
+        }
+        var result= outer(50,100);
+        //result();
+        
+        //var result = outer();
+        //  alert(result);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

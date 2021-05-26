@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .coantainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(rgb(30, 30, 128) , lightblue);
+        }
+       .card{
+           width: 450px;
+           padding: 20px;
+           border: 1px solid tomato;
+           border-radius: 20px;
+           display: flex;
+           justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(rgb(150, 40, 7) , rgb(97, 38, 11));
+       }
+       .card  .image{
+           width: 35%;
+           border: 4px solid white;
+           border-radius: 50% 150%;
+           box-shadow: 4px 8px 12px tomato;
+       }
+       .card  .image img{
+           width: 100%;
+           border-radius: 50% 150%;
+           box-shadow: 4px 8px 12px rgb(194, 89, 71);
+       }
+       .card .content {
+           width: 50%;
+           color: white;
+           text-transform: uppercase;
+           text-shadow: 4px 4px 4px black;
+           
+       }
+       .card .content span {
+         color: rgb(12, 12, 12);
+         text-shadow: none;
+         font-weight: bold;
+         font-style: italic;
+       }
+      
+    </style>
+</head>
+<body>
+    <!-- <div class="coantainer">
+        <div class="card">
+            <div class="image">
+                <img src="emp.jpg" />
+            </div>
+            <div class="content">
+                <p>John <span>Doe</span></p>
+                <p>Project Mananger</p>
+                <p>Newyark City</p>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+    <script>
+        function component(){
+
+           
+        //crateing elements
+        var divcontainer = document.createElement('div');
+        var divcard = document.createElement('div');
+        var divcontent = document.createElement('div');
+        var divimage=document.createElement('div');
+        var image = document.createElement('img');
+        var pname = document.createElement('p');
+        var pjob = document.createElement('p');
+        var pcity = document.createElement('p');
+
+        //applying classes
+
+        divcontainer.className="coantainer";
+        divcard.className="card";
+        divimage.className="image"
+        divcontent.className="content";
+
+        //filling with content
+
+        pname.textContent="john doe"
+        pjob.textContent="Project Mananger"
+        pcity.textContent="NewYark Cityr"
+        image.src="emp.jpg"
+
+        //nesting the elements
+        divcontainer.append(divcard);
+        divcard.append(divimage, divcontent);
+        divimage.append(image);
+        divcontent.append(pname, pjob , pcity);
+
+        document.body.append(divcontainer);
+     
+   }
+   component();
+    </script>
+</body>
+</html>

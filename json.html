@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      p{
+        border: 1px solid red;
+        padding:10px;
+        
+      }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+       <p id="id"></p>
+       <p id="id1"></p>
+       <p id="id2"></p>
+       <p id="id3"></p>
+       <p id="id4"></p>
+       <p id="id5"></p>
+    </div>
+    <script>
+         var wrap = document.getElementById("wrap")        
+        
+        
+        fetch('https://jsonplaceholder.typicode.com/users')
+       .then(res=>res.json())
+       .then(data=>{ 
+         data.slice(0, 6).map((obj, index)=>{
+               console.log(wrap.children[index])
+              wrap.children[index].textContent=`username is :${obj.name} 
+                 user email is : ${obj.email}
+                 user website is: ${obj.website}
+                 somthing is  ${obj.username} `
+         })     
+        
+        })
+  
+    
+         
+     
+           
+      
+
+
+      
+       
+    
+    </script>
+</body>
+</html>

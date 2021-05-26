@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+       }
+       .wrapper {
+            background-image: url(city.jpg);
+            height: 100vh;
+            background-size:100% 100% ;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+       }
+       .img{
+           /* border:1px solid red; */
+           border-radius: 10px;
+           padding: 10px;
+           text-align: center;
+       }
+       .img h2{
+           text-transform: uppercase;
+           color: white;
+           margin-bottom: 20px;
+       }
+       .img p {
+          text-transform: uppercase;
+          color: white; 
+          margin-bottom: 20px;
+       }
+       .img a{
+           text-transform: uppercase;
+           text-decoration: none;
+           color: white;
+           background-color: rgb(230, 157, 230);
+           padding: 7px 12px;
+           border-radius: 9px;
+           border: 1px solid white;
+           transition: all 2s;
+       }
+       .img a:hover{
+           background-color: rgb(122, 58, 122);
+       }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+       <div class="img">
+        <h2>my awesome website</h2>
+        <p>look at this website and bask in its amazing glory</p>
+         <a href="#">go ahead</a>
+       </div>   
+    </div>
+</body>
+</html>
